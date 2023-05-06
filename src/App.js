@@ -1,7 +1,20 @@
 import React from 'react';
+import Todolist from './Todo/TodoList';
 
 function App() {
-  return <div></div>;
+  const todos = [
+    {id: 1, completed: false, title: 'Купить хлеб'},
+    {id: 2, completed: false, title: 'Купить масло'},
+    {id: 3, completed: false, title: 'Купить молоко'},
+  ]
+
+  return (
+    <div className='wrapper'>
+      <h1>React tutorial</h1>
+
+      <Todolist todos={todos}/>
+    </div>
+  );
 }
 
 export default App;
