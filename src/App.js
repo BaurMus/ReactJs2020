@@ -1,5 +1,5 @@
 import React from 'react';
-import Todolist from './Todo/TodoList';
+import TodoList from './Todo/TodoList';
 
 function App() {
   const todos = [
@@ -12,7 +12,7 @@ function App() {
     <div className='wrapper'>
       <h1>React tutorial</h1>
 
-      <Todolist todos={todos}/>
+      <TodoList todos={todos}/>
     </div>
   );
 }
